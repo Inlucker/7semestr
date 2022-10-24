@@ -104,7 +104,7 @@ $P_1(t+\Delta t) = P_1(t)(1-\lambda_{12}\Delta t)+P_3(t)\Lambda_{31}\Delta t$
 
 $\lim\limits_{\Delta t\to 0}{\frac{P_1(t+\Delta t)-P_1(t)}{\Delta t} = -P_1(t)\lambda_{12}+P_3(t)\lambda}$
 
-$P'_1(t) = -P_1(t)\lambda_{12}+P_3(t)\lambda$
+$P'_1(t) = -P_1(t)\lambda_{12}+P_3(t)\lambda_{31}$
 
 2. Найдем вероятность того, что система находится в состоянии S2:
 
@@ -126,7 +126,7 @@ $P'_4(t) = -P_4(t)\lambda_{42} - P_2(t)\lambda_{24} + P_3(t)\lambda_{34}$
 
 $
 \begin{cases}
-P'_1(t) = -P_1(t)\lambda_{12}+P_3(t)\lambda \\
+P'_1(t) = -P_1(t)\lambda_{12}+P_3(t)\lambda_{31} \\
 P'_2(t) = -P_2(t)\lambda_{24} - P_2(t)\lambda_{23} + P_1(t)\lambda_{12} + P_4(t)\lambda_{42} \\
 P'_3(t) = -P_3(t)\lambda_{31} - P_3(t)\lambda_{34} + P_2(t)\lambda_{23} \\
 P'_4(t) = -P_4(t)\lambda_{42} - P_2(t)\lambda_{24} + P_3(t)\lambda_{34} 
