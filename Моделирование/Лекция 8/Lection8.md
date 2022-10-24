@@ -108,15 +108,19 @@ $P'_1(t) = -P_1(t)\lambda_{12}+P_3(t)\lambda$
 
 2. Найдем вероятность того, что система находится в состоянии S2:
 
-$P_2(t+\Delta t) = P_2(t)(1-\lambda_{24} \Delta t - \lambda_{23} \Delta t) ...$
+$P_2(t+\Delta t) = P_2(t)(1-\lambda_{24} \Delta t - \lambda_{23} \Delta t) + P_1(t) \lambda_{12} \Delta t + P_4(t) \lambda_{42} \Delta t$
+
+$\lim\limits_{\Delta t\to 0}{\frac{P_2(t+\Delta t)-P_2(t)}{\Delta t} = -P_2(t) \lambda_{24}-P_2(t) \lambda_{23} + P_1(t) \lambda_{12} + P_4(t) \lambda_{42}}$
+
+$P'_2(t) = -P_2(t)\lambda_{24} - P_2(t)\lambda_{23} + P_1(t)\lambda_{12} + P_4(t)\lambda_{42}$
 
 3. Найдем вероятность того, что система находится в состоянии S3:
 
-$...$
+$P'_3(t) = -P_3(t)\lambda_{31} - P_3(t)\lambda_{34} + P_2(t)\lambda_{23}$
 
 4. Найдем вероятность того, что система находится в состоянии S4:
 
-$...$
+$P'_4(t) = -P_4(t)\lambda_{42} - P_2(t)\lambda_{24} + P_3(t)\lambda_{34}$
 
 В результате получаем систему уравнений Колмогорова:
 
