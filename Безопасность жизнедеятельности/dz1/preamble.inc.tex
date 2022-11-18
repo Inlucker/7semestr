@@ -1,0 +1,218 @@
+\sloppy
+
+\usepackage{cmap} % Улучшенный поиск русских слов в полученном pdf-файле
+\usepackage[T2A]{fontenc} % Поддержка русских букв
+\usepackage[utf8]{inputenc} % Кодировка utf8
+\usepackage[english,russian]{babel} % Языки: русский, английский
+\usepackage{enumitem}
+%\usepackage{pscyr} % Нормальные шрифты
+\usepackage[figurename=Рисунок]{caption}
+
+\usepackage{hhline}
+\usepackage{amsmath}
+\usepackage{amsfonts} 
+
+\usepackage{geometry}
+\geometry{left=30mm}
+\geometry{right=10mm}
+\geometry{top=20mm}
+\geometry{bottom=20mm}
+
+% Пакет Tikz
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,shadows}
+
+% Произвольная нумерация списков.
+\usepackage{enumerate}
+
+% ячейки в несколько строчек
+\usepackage{multirow}
+
+% itemize внутри tabular
+\usepackage{paralist,array}
+
+\setlength{\parskip}{1ex plus0.5ex minus0.5ex} % разрыв между абзацами
+\setlength{\parskip}{1ex} % разрыв между абзацами
+\usepackage{blindtext}
+
+\usepackage{graphicx} 
+\usepackage{float}
+
+\newcommand{\imgwc}[4]
+{
+	\begin{figure}[#1]
+		\center{\includegraphics[width=#2]{inc/img/#3}}
+		\caption{#4}
+		\label{img:#3}
+	\end{figure}
+}
+\newcommand{\imghc}[4]
+{
+	\begin{figure}[#1]
+		\center{\includegraphics[height=#2]{inc/img/#3}}
+		\caption{#4}
+		\label{img:#3}
+	\end{figure}
+}
+\newcommand{\imgsc}[4]
+{
+	\begin{figure}[#1]
+		\center{\includegraphics[scale=#2]{inc/img/#3}}
+		\caption{#4}
+		\label{img:#3}
+	\end{figure}
+}
+
+\usepackage{titlesec}
+\titleformat{\section}
+	{\normalsize\bfseries}
+	{\thesection}
+	{1em}{}
+\titlespacing*{\chapter}{0pt}{-30pt}{8pt}
+\titlespacing*{\section}{\parindent}{*4}{*4}
+\titlespacing*{\subsection}{\parindent}{*4}{*4}
+
+\usepackage{setspace}
+\onehalfspacing % Полуторный интервал
+
+\frenchspacing
+\usepackage{indentfirst} % Красная строка
+
+\usepackage{titlesec}
+\titleformat{\chapter}{\LARGE\bfseries}{\thechapter}{20pt}{\LARGE\bfseries}
+\titleformat{\section}{\Large\bfseries}{\thesection}{20pt}{\Large\bfseries}
+
+\usepackage{listings}
+\usepackage{xcolor}
+
+\lstdefinestyle{python}{
+	language=python,
+	backgroundcolor=\color{white},
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\color{blue},
+	stringstyle=\color{red},
+	commentstyle=\color{gray},
+	directivestyle=\color{orange},
+	numbers=left,
+	numberstyle=\tiny,
+	stepnumber=1,
+	numbersep=5pt,
+	frame=single,
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=true,
+	escapeinside={\#*}{*)},
+	morecomment=[l][\color{magenta}]{\#},
+	columns=fullflexible
+}
+
+\lstdefinestyle{yaml}{
+	language=python,
+	backgroundcolor=\color{white},
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\color{green},
+	stringstyle=\color{red},
+	commentstyle=\color{gray},
+	directivestyle=\color{orange},
+	numbers=left,
+	numberstyle=\tiny,
+	stepnumber=1,
+	numbersep=5pt,
+	frame=single,
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=true,
+	escapeinside={\#*}{*)},
+	morecomment=[l][\color{magenta}]{\#},
+	columns=fullflexible
+}
+
+\lstdefinestyle{bash}{
+	language=bash,
+	backgroundcolor=\color{white},
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\color{green},
+	stringstyle=\color{red},
+	commentstyle=\color{gray},
+	directivestyle=\color{orange},
+	numbers=left,
+	numberstyle=\tiny,
+	stepnumber=1,
+	numbersep=5pt,
+	frame=single,
+	tabsize=4,
+	captionpos=b,
+	breaklines=true,
+	breakatwhitespace=true,
+	escapeinside={\#*}{*)},
+	morecomment=[l][\color{magenta}]{\#},
+	columns=fullflexible
+}
+
+\usepackage{pgfplots}
+\usetikzlibrary{datavisualization}
+\usetikzlibrary{datavisualization.formats.functions}
+
+\usepackage{graphicx}
+\newcommand{\img}[3] {
+	\begin{figure}[h!]
+		\center{\includegraphics[height=#1]{inc/img/#2}}
+		\caption{#3}
+		\label{img:#2}
+	\end{figure}
+}
+\newcommand{\boximg}[3] {
+	\begin{figure}[h]
+		\center{\fbox{\includegraphics[height=#1]{inc/img/#2}}}
+		\caption{#3}
+		\label{img:#2}
+	\end{figure}
+}
+
+\usepackage[justification=centering]{caption} % Настройка подписей float объектов
+
+\usepackage[unicode,pdftex]{hyperref} % Ссылки в pdf
+\hypersetup{hidelinks}
+
+\usepackage{csvsimple}
+
+\newcommand{\code}[1]{\texttt{#1}}
+
+\usepackage{pdflscape}
+\usepackage{rotating}
+\usepackage[absolute]{textpos}
+\usepackage{fancyhdr}
+
+\usepackage{graphicx}   % Пакет для включения рисунков
+
+% С такими оно полями оно работает по-умолчанию:
+\usepackage{geometry}
+\geometry{right=10mm}
+\geometry{left=30mm}
+\geometry{bottom=20mm}
+\geometry{top=20mm}
+\geometry{ignorefoot}% считать от нижней границы текста
+
+% Пакет Tikz
+\usepackage{tikz}
+\usetikzlibrary{arrows,positioning,shadows}
+
+% Произвольная нумерация списков.
+\usepackage{enumerate}
+
+% ячейки в несколько строчек
+\usepackage{multirow}
+
+% itemize внутри tabular
+\usepackage{paralist,array}
+
+\setlength{\parskip}{1ex plus0.5ex minus0.5ex} % разрыв между абзацами
+\setlength{\parskip}{1ex} % разрыв между абзацами
+\usepackage{blindtext}
+
+% Центрирование подписей к плавающим окружениям
+\usepackage[justification=centering]{caption}
+
+\usepackage{makecell}
