@@ -1,0 +1,19 @@
+sudo mount -t vboxsf kern_monitor shared
+123
+
+cd shared
+make
+
+modinfo kern_monitor.ko
+sudo insmod kern_monitor.ko
+lsmod | grep kern_monitor
+dmesg | tail -25
+sudo rmmod kern_monitor
+
+sudo insmod kern_monitor.ko
+ls
+sudo rmmod kern_monitor
+dmesg | tail -22
+
+sudo insmod kern_monitor.ko
+telnet localhost 8080
