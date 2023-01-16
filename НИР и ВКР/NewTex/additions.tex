@@ -1,0 +1,107 @@
+%\addcontentsline{toc}{chapter}{ПРИЛОЖЕНИЕ А}
+%\StructuredChapter{ПРИЛОЖЕНИЕ А}
+
+\addcontentsline{toc}{chapter}{ПРИЛОЖЕНИЕ А Создание базы данных}
+
+\titleformat
+{\chapter} % command
+[display] % shape
+{\centering\normalfont\large\bfseries} % format
+{\centering ПРИЛОЖЕНИЕ А} % label
+{-1ex} % sep
+{
+	\centering
+} 
+\chapter{Создание базы данных}
+\titleformat{\chapter}[display]
+{\normalfont\large\bfseries}
+{\thechapter}
+{14pt}{\large}
+
+\appendix
+%\titleformat{\section}[display]
+%  {\normalfont\large\bfseries}
+%  {\centering ПРИЛОЖЕНИЕ\ \thesection}
+%  {14pt}{\large\centering}
+%\renewcommand{\thesection}{\Asbuk{section}}
+
+%\section{Поддержка SQL Server в ОС Fedora Workstation 35}
+
+%\section*{Создание базы данных}
+\begin{lstinputlisting}[
+	caption={создание таблиц, часть 1},
+	label={TableCreation},
+	language=SQL,
+	linerange={1-40},
+	]{./inc/src/TableCreation.sql}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание таблиц, часть 2},
+	label={TableCreation},
+	language=SQL,
+	linerange={42-79},
+	]{./inc/src/TableCreation.sql}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание таблиц, часть 3},
+	label={TableCreation},
+	language=SQL,
+	linerange={81-116},
+	]{./inc/src/TableCreation.sql}
+\end{lstinputlisting}
+
+%\newpage
+%\begin{lstinputlisting}[
+%	caption={копирование сгенерированных таблиц в базу данных},
+%	label={Copy},
+%	language=SQL,
+%	]{./inc/src/Copy.sql}
+%\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание views, часть 1},
+	label={Views},
+	language=SQL,
+	linerange={1-36},
+	]{./inc/src/Views.sql}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание views, часть 2},
+	label={Views},
+	language=SQL,
+	linerange={38-80},
+	]{./inc/src/Views.sql}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание триггеров, часть 1},
+	label={Triggers},
+	language=SQL,
+	linerange={1-24},
+	]{./inc/src/NewTriggers.sql}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание триггеров, часть 2},
+	label={Triggers},
+	language=SQL,
+	linerange={26-68},
+	]{./inc/src/NewTriggers.sql}
+\end{lstinputlisting}
+
+\newpage
+\begin{lstinputlisting}[
+	caption={создание ролей},
+	label={Roles},
+	language=SQL,
+	]{./inc/src/Roles.sql}
+\end{lstinputlisting}
