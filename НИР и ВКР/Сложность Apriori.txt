@@ -1,0 +1,17 @@
+При 4 items и 6 transactions:
+6 + 4+6+4+1 = 21 (6 + 15)
+
+При 5 items и 6 transactions:
+6 + 5+10+10+5+1 = 32 (6 + 26)
+
+При 6 items и 6 transactions:
+6 + 6+15+20+15+6+1 = 69  (6 + 63)
+
+При 7 items и 6 transactions:
+6 + 7+21+35+35+21+7 = 132 (6 + 126)
+
+При 8 items и 6 transactions:
+6 + 8+28+56+70+56+28+8 = 260 (6 + 254)
+
+При 9 items и 6 transactions:
+6 + 9+36+84+126+126+84+36+9 = 516 (6 + 510)
